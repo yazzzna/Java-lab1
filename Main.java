@@ -23,13 +23,13 @@ public class Main {
         ComplexMatrix sumatrix = matrix1.sum(matrix2); // сумма
         sumatrix.printmatrix();
 
-        ComplexMatrix submatrix = matrix1.sub(matrix2);
+        ComplexMatrix submatrix = matrix1.sub(matrix2); // разность
         submatrix.printmatrix();
 
-        ComplexMatrix mulmatrix = matrix1.mul(matrix2);
+        ComplexMatrix mulmatrix = matrix1.mul(matrix2); // умножение
         mulmatrix.printmatrix();
 
-        ComplexMatrix transmatrix = matrix1.trans();
+        ComplexMatrix transmatrix = matrix1.trans(); // транспонирование
         transmatrix.printmatrix();
 
     }
