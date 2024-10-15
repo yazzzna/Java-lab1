@@ -27,7 +27,7 @@ public class Main {
         matrix2.printmatrix();
 
         System.out.println("Сумма");
-        ComplexMatrix sumatrix = matrix1.sum(matrix2); // сумма
+        ComplexMatrix sumatrix = matrix1.sum(matrix2);
         sumatrix.printmatrix();
 
         System.out.println("Разность");
