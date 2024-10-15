@@ -21,4 +21,8 @@ public class ComplexNum{ //класс комплексных чисел (a+bi)
     public ComplexNum div(ComplexNum other){ // деление комплексных чисел
         return new ComplexNum((this.re * other.re + this.im * other.im)/(other.re * other.re + other.im * other.im) , (this.im * other.re - this.re * other.im)/(other.re * other.re + other.im * other.im));
     }
+
+    public String toString(){ // норм вид
+        return re + "+" + im + "i";
+    }
 }
