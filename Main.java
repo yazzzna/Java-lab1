@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Project by Yana Zakharchenko");
+        System.out.println("Project by Yana Zakharchenko\n");
 
         ComplexNum[][] m1 = { //данные для 1 матрицы
             { new ComplexNum(2,3), new ComplexNum(4,5), new ComplexNum(6,7) },
@@ -20,18 +20,30 @@ public class Main {
         ComplexMatrix matrix1 = new ComplexMatrix(m1); // создание матриц
         ComplexMatrix matrix2 = new ComplexMatrix(m2);
 
+        System.out.println("Матрица 1:");
+        matrix1.printmatrix();
+
+        System.out.println("Матрица 2:");
+        matrix2.printmatrix();
+
+        System.out.println("Сумма");
         ComplexMatrix sumatrix = matrix1.sum(matrix2); // сумма
         sumatrix.printmatrix();
 
-        ComplexMatrix submatrix = matrix1.sub(matrix2); // разность
+        System.out.println("Разность");
+        ComplexMatrix submatrix = matrix1.sub(matrix2);
         submatrix.printmatrix();
 
-        ComplexMatrix mulmatrix = matrix1.mul(matrix2); // умножение
+        System.out.println("Умножение");
+        ComplexMatrix mulmatrix = matrix1.mul(matrix2);
         mulmatrix.printmatrix();
 
-        ComplexMatrix transmatrix = matrix1.trans(); // транспонирование
+
+        System.out.println("Транспонирование матрицы 1");
+        ComplexMatrix transmatrix = matrix1.trans();
         transmatrix.printmatrix();
 
     }
 }
+
 
