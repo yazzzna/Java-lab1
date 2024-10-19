@@ -1,4 +1,4 @@
-{
+public class ComplexMatrix {
     private ComplexNum[][] matrix;
     private int rows;
     private int cols;
@@ -77,3 +77,4 @@
         System.out.println();
     }
 }
+
